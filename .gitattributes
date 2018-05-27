@@ -1,0 +1,2 @@
+Models/*.* filter=lfs diff=lfs merge=lfs -text
+EnvMaps/*.* filter=lfs diff=lfs merge=lfs -text
