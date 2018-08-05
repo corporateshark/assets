@@ -3,11 +3,13 @@
 import os
 import shutil
 
-# " --rotateX90 --etc2 --mipmaps"
-defaultParams = " --rotateX90 --mipmaps"
+# " --etc2 --mipmaps"
+defaultParams = " --mipmaps"
 
 def convert(modelName, outName):
-	os.system("..\\..\\..\\Tools\\MeshConverter\\MeshConverter_Release.exe Models/" + modelName + " ExternalAssets/" + outName + " " + defaultParams )
+	if os.system("..\\..\\..\\Tools\\MeshConverter\\MeshConverter_Release.exe Models/" + modelName + " ExternalAssets/" + outName + " " + defaultParams ) != 0:
+		print("Failed to run MeshConverter")
+		exit(255)
 
 convert( "../../polly/polly/project_polly.gltf ", "Polly" );
 convert( "damagedHelmet/damagedHelmet.gltf", "DamagedHelmet" );
