@@ -22,3 +22,4 @@ convert( "zis-101a_sport_1938/scene.gltf", "ZIS" );
 
 shutil.move( "ExternalAssets", "../../../CommonMedia/ExternalAssets" );
 shutil.copytree( "EnvMaps", "../../../CommonMedia/ExternalAssets/EnvMaps" );
+shutil.copytree( "HeightMaps", "../../../CommonMedia/ExternalAssets/HeightMaps" );
