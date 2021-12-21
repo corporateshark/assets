@@ -11,7 +11,9 @@ def convert(modelName, outName, params = ""):
 		print("Failed to run MeshConverter")
 		exit(255)
 
-convert( "../../polly/polly/project_polly.gltf ", "Polly" );
+convert( "../../polly/polly/project_polly.gltf", "Polly" );
+convert( "../../gltf-test/tutorialModels/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf", "AlphaBlendModeTest" );
+convert( "../../gltf-test/tutorialModels/AnimatedCube/glTF/AnimatedCube.gltf", "AnimatedCube" );
 convert( "damagedHelmet/damagedHelmet.gltf", "DamagedHelmet" );
 convert( "busterDrone/busterDrone.gltf", "BusterDrone" );
 convert( "kv-2_heavy_tank_1940/scene.gltf", "Tank" );
