@@ -14,6 +14,12 @@ def convert(modelName, outName, params = ""):
 convert( "../../polly/polly/project_polly.gltf", "Polly" );
 convert( "../../gltf-test/tutorialModels/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf", "AlphaBlendModeTest" );
 convert( "../../gltf-test/tutorialModels/AnimatedCube/glTF/AnimatedCube.gltf", "AnimatedCube" );
+convert( "../../gltf-test/tutorialModels/NormalTangentTest/glTF/NormalTangentTest.gltf", "NormalTangentTest" );
+convert( "../../gltf-test/tutorialModels/NormalTangentMirrorTest/glTF/NormalTangentMirrorTest.gltf", "NormalTangentMirrorTest" );
+convert( "../../gltf-test/tutorialModels/OrientationTest/glTF/OrientationTest.gltf", "OrientationTest" );
+convert( "../../gltf-test/tutorialModels/VertexColorTest/glTF/VertexColorTest.gltf", "VertexColorTest" );
+convert( "../../gltf-test/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf", "TextureSettingsTest" );
+convert( "../../glTF-Sample-Models/2.0/Sponza/glTF/Sponza.gltf", "crytek-sponza" );
 convert( "damagedHelmet/damagedHelmet.gltf", "DamagedHelmet" );
 convert( "busterDrone/busterDrone.gltf", "BusterDrone" );
 convert( "kv-2_heavy_tank_1940/scene.gltf", "Tank" );
