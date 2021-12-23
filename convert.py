@@ -20,6 +20,8 @@ convert( "../../gltf-test/tutorialModels/OrientationTest/glTF/OrientationTest.gl
 convert( "../../gltf-test/tutorialModels/VertexColorTest/glTF/VertexColorTest.gltf", "VertexColorTest" );
 convert( "../../gltf-test/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf", "TextureSettingsTest" );
 convert( "../../glTF-Sample-Models/2.0/Sponza/glTF/Sponza.gltf", "crytek-sponza" );
+convert( "../../bistro/BistroExterior.fbx", "bistro-exterior", "--pbrSet --useNormalsDirectX --no-merge --mergeMtl Foliage_Linde_Tree_Large_Orange_Leaves --mergeMtl Foliage_Linde_Tree_Large_Green_Leaves --mergeMtl Foliage_Linde_Tree_Large_Trunk --occluders ../../../Apps/Test_SceneGraph/GameData/SceneBistro_Occluders.txt" );
+convert( "../../bistro/BistroInterior_Wine.fbx", "bistro-interior", "--pbrSet --useNormalsDirectX --no-merge --removeNodes ../../../Apps/Test_SceneGraph/GameData/SceneBistro_SkipNodes.txt" );
 convert( "damagedHelmet/damagedHelmet.gltf", "DamagedHelmet" );
 convert( "busterDrone/busterDrone.gltf", "BusterDrone" );
 convert( "kv-2_heavy_tank_1940/scene.gltf", "Tank" );
