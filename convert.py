@@ -11,6 +11,13 @@ def convert(modelName, outName, params = ""):
 		print("Failed to run MeshConverter")
 		exit(255)
 
+if os.system("git-lfs install" ) != 0:
+		print("Failed to run `git-lfs install`")
+		exit(255)
+if os.system("git-lfs pull" ) != 0:
+		print("Failed to run `git-lfs pull`")
+		exit(255)
+
 convert( "../../polly/polly/project_polly.gltf", "Polly" );
 convert( "../../gltf-test/tutorialModels/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf", "AlphaBlendModeTest" );
 convert( "../../gltf-test/tutorialModels/AnimatedCube/glTF/AnimatedCube.gltf", "AnimatedCube" );
